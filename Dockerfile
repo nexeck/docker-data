@@ -5,4 +5,5 @@ RUN mkdir -p "$DATA_DIR"
 VOLUME ["$DATA_DIR"]
 
 COPY ./forever.sh /
+RUN chmod +x /forever.sh
 ENTRYPOINT ["/forever.sh"]
