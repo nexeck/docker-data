@@ -6,4 +6,4 @@ VOLUME ["$DATA_DIR"]
 
 COPY ./forever.sh /
 RUN chmod +x /forever.sh
-ENTRYPOINT ["/forever.sh"]
+CMD ["/forever.sh"]
